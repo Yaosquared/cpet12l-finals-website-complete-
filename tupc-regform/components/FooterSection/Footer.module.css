@@ -1,0 +1,25 @@
+.container {
+  background: rgba(134, 110, 90, 0.73);
+  text-align: center;
+  padding: 2%;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.container img {
+  width: 80px;
+  height: 60px;
+}
+
+@media all and (max-width:480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container img {
+    width: 80px;
+    height: 60px;
+  }
+}
