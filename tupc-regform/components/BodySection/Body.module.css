@@ -24,12 +24,15 @@
 
 .formcontainer input {
   width: 100%;
+  border-radius: 50px;
+  padding: 5px;
 }
 
 .formcontainer textarea {
   width: 100%;
   height: 30vh;
   resize: none;
+  border-radius: 15px;
 }
 
 .radio input {
