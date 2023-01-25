@@ -4,13 +4,13 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 const schema = yup.object().shape({
-  firstName: yup.string().required("Please provide your first name"),
-  lastName: yup.string().required("Please provide your last name"),
-  email: yup.string().email().required(),
-  phoneNum: yup.string().matches((/^(09|\+639)\d{9}$/), 'Invalid phone number').required(),
-  address: yup.string().required("Please provide your address"),
-  isOldStudent: yup.string().nullable().required("Please select a radio option"),
-  reason: yup.string().required("Please provide reason")
+  firstName: yup.string().required("*Please provide your first name"),
+  lastName: yup.string().required("*Please provide your last name"),
+  email: yup.string().email().required("*Please provide a valid email address"),
+  phoneNum: yup.string().matches((/^(09|\+639)\d{9}$/), '*Invalid phone number').required(),
+  address: yup.string().required("*Please provide your address"),
+  isOldStudent: yup.string().nullable().required("*Please select a radio option"),
+  reason: yup.string().required("*Please provide reason")
 }).required();
 
 export default function Body() {
