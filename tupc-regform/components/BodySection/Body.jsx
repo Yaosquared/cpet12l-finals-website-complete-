@@ -9,7 +9,7 @@ const schema = yup.object().shape({
   email: yup.string().email().required("*Please provide a valid email address"),
   phoneNum: yup.string().matches((/^(09|\+639)\d{9}$/), '*Invalid phone number').required(),
   address: yup.string().required("*Please provide your address"),
-  isOldStudent: yup.string().nullable().required("*Please select a radio option"),
+  isOldStudent: yup.string().nullable().required("*Please select an option"),
   reason: yup.string().required("*Please provide reason")
 }).required();
 
