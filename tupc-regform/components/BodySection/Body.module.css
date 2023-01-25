@@ -44,6 +44,10 @@
   height: 40px;
 }
 
+.formcontainer p {
+  color: #D14040;
+}
+
 @media all and (max-width:480px) {
   .container h2 {
     margin-left: 70px;
